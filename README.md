@@ -1,2 +1,2 @@
 # PythonStudies
-Repository for my archives python 
+Repository for my python archives 
