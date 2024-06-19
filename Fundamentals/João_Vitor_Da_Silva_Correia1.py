@@ -1,7 +1,7 @@
 
 """
     Descrição: Lista de exercícios - Funções
-    Autor: João Vitor Da Silva Correia
+    Autor: João Vitor
     Data: 30/03/2016
 """
 
