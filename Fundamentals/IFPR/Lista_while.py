@@ -1,6 +1,6 @@
 """
     Descrição: Lista de exercícios - Repetição por condição 
-    Autor: João Vitor Da Silva Correia
+    Autor: João Vitor 
     Data: 13/04/2016
 """
 
