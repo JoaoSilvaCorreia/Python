@@ -1,6 +1,6 @@
 """
     Descrição: Lista de exercícios - Repetição por contagem
-    Autor: João Vitor Da Silva Correia
+    Autor: João Vitor 
     Data: 02/04/2016
 """
 
