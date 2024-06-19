@@ -1,0 +1,129 @@
+ """ Correção da Prova """
+
+
+#Questão 1
+lista = lista*2  --> # [4,2,4,2]
+lista += [5] --> # [4,2,4,2,5]
+dell lista[3] --> # [4,2,4,5]
+lista.append(6) --># [4,2,4,5,6]
+
+
+
+#/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+#Questão 2
+for i in range(len(lista)):
+		print(i, end=", ")        #R: 0,1,2,3,4
+
+
+
+for i in range(len(lista)):
+		print(lista[i], end=", ")  #R: 4,2,4,5,6
+
+
+
+for i in lista:
+		print(i, end=", ")  #R: 4,2,4,5,6
+
+
+
+
+
+
+
+#/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+#Questâo 3
+
+|4 1 2 3|
+|3 7 6 4|
+|4 3 2 1|
+|2 4 2 8|
+
+
+def funcao(matriz):
+		linhas = len(matriz)
+		colunas = len(matriz[0])
+		for i in range(linhas):
+				for j iin range(colunas): 
+					if i+j == colunas -1   # fórmula da Diagonal secundaria
+							print(matriz[i][j],end =" , ")
+
+#SAIDA: 3,6,3,2
+
+
+
+
+
+
+
+#Questão 5
+
+
+
+
+
+
+
+
+#Questão 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Questão 7
+
+class Curso:
+		def __init__(self,nome,vagas,inscritos):
+			self.nome = nome
+			self.vagas = vagas
+			self.inscritos = inscritos
+
+
+def cursos_mais_concorridos(lista_cursos):
+		#encontrar média de concorrencia
+		soma_con = 0
+		for curso in lista_cursos:
+			concorrencia = curso.vagas / curso.inscritos
+			soma_con = soma_con + concorrencia
+		media = soma_con / len(lista_cursos)
+		#mostrar nome do cursos que estão acima da média
+		for curso in lista_cursos:
+			concorrencia = curso.inscritos / curso.vagas
+			if(concorrencia > media):
+				print("Curso:",curso.nome)
+
+#Teste
+def main():
+	lista = []
+	curso1 = curso("c1",40,50)
+	lista.append(curso1)
+	curso2 = curso("c2",30,20)
+	lista.append(curso2)
+	curso3 = curso("c3",40,10)
+	lista.append(curso3)
+	cursos_mais_concorridos(lista)
+
